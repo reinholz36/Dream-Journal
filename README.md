@@ -34,8 +34,8 @@ This application assists a user in recording their dreams
 * Examples of journaling apps: https://www.lifewire.com/best-journal-apps-4175848
 
 # Example Journal Entry Questions
-* What emotions am I feeling right now?
 * What is your personal weather status (cloudy, foggy, sunny breaks etc)?
+* What emotions am I feeling right now?
 * Important dream details
 
 
