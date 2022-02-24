@@ -44,7 +44,7 @@ This application assists a user in recording their dreams
 
 A simple starter project with Express, Handlebars, Sequelize, Passport and Local Auth.
 
-## Live link:
+## Example Starter code Live link:
 https://project2-starter-auth.herokuapp.com/
 
 ## Requirements:
@@ -62,5 +62,8 @@ FORCE_SYNC=true_or_false
 TU=mysql_user
 TP=mysql_password
 ```
+
+## Our Project Live Link: 
+https://frozen-atoll-87689.herokuapp.com/
 
 
