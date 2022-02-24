@@ -22,11 +22,11 @@ body {
   color: black;
 }
 
-.btn {
+/* .btn {
   color:white;
   background:#cadde1;
   border: 1px solid white;
-}
+} */
 
 #user-form, .header-wrap, #create-form, .create-user-wrap {
   padding: 20px;
