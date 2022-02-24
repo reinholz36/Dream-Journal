@@ -34,11 +34,11 @@
     </div>
 
     <div>
-      <button type="submit" id="update-user" data-id="{{userInfo.id}}" class="btn btn-outline-dark">Update</button>
+      <button type="submit" id="update-user" data-id="{{userInfo.id}}" class="btn btn-dark">Update</button>
       {{#unless userInfo.isAdmin}}
         <button type="submit" id="delete-user" class="btn btn-outline-dark">Delete</button>
       {{/unless}}
-      <button type="submit" id="view-user" data-id="{{userInfo.id}}" class="btn btn-outline-dark">Refresh</button>
+      <button type="submit" id="view-user" data-id="{{userInfo.id}}" class="btn btn-dark">Refresh</button>
     </div>
   </form>
 
@@ -67,8 +67,8 @@
         </div>
 
         <div class="modal-footer">
-          <button id="confirm-delete" type="button" data-id="{{userInfo.id}}" class="btn btn-outline-dark">Confirm Delete</button>
-          <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Nah I'll stay</button>
+          <button id="confirm-delete" type="button" data-id="{{userInfo.id}}" class="btn btn-dark">Confirm Delete</button>
+          <button type="button" class="btn btn-dark" data-dismiss="modal">Nevermind, I'll stay</button>
         </div>
       </div>
     </div>
