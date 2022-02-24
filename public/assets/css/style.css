@@ -1,8 +1,4 @@
 body {
-  /* color: white;
-  background-size: cover;
-  height:100%
-  */
   background-image: url(/images/aurora.jpg);
     background-size: cover;
     background-attachment:fixed;
@@ -75,9 +71,9 @@ body {
   text-transform: capitalize;
 }
 
-/* hr {
+hr {
   background-color: #fff !important;
-} */
+}
 
 .list-group-item {
   line-height: 2.5;
