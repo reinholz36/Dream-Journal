@@ -75,9 +75,9 @@ body {
   text-transform: capitalize;
 }
 
-hr {
+/* hr {
   background-color: #fff !important;
-}
+} */
 
 .list-group-item {
   line-height: 2.5;
