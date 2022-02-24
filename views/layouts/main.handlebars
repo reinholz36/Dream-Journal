@@ -12,11 +12,109 @@
 	<script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-	<title>Project 2 Starter</title>
+	<title>Dream Journal</title>
 </head>
 
 <body>
 	{{{ body }}}
+	 
+  <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand logo" href="#">Dream Journal</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar1">
+            <ul class="navbar-nav nav nav-fill w-100">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#login">Login</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron jumbotron-fluid jumbotron">
+    <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1 class="display-4 text-white">“I think of dreaming as overnight therapy.”</h1>
+            <p class="lead text-white">
+              — MATTHEW WALKER, PHD NEUROSCIENCE & PSYCHOLOGY
+              </p>
+        </div>
+        <div class="card col">
+          <!-- <img class="card-img-top" src="/images/old-ship.jpg" alt="Card image cap"> -->
+          <div class="card-body">
+            <h5 class="card-title">Registration</h5>
+            <form>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputFirst">First Name</label>
+                  <input type="text" class="form-control" id="inputFirst" value="Enter First Name" placeholder="John">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputLast">Last Name</label>
+                  <input type="text" class="form-control" id="inputLast" value="Enter Last Name" placeholder="Doe">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                <small id="emailHelp" class="form-text text-muted">Password should be between 8 and 15 characters</small>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- <div class="container spacing">
+ 
+</div> -->
+
+  <div class="container">
+    <div class="row">
+      <div class="card col">
+        <!-- <img class="card-img-top" src="/images/old-ship.jpg" alt="Card image cap"> -->
+        <div class="card-body">
+          <h5 class="card-title">Published Date 02/23/2022</h5>
+          <p class="card-text">I was at church and I did not have a church newsletter I just had a normal book so when I was asked to read a prayer out loud by my sister from my seat I couldn’t and then I was embarrassed. Then I left church early but nobody else came out and I waited and it turned out everybody was late out because they all got to make their own profiteroles and chocolate from scratch. I was so jealous and I was craving profiteroles and thinking how could I make them at home. Then I ran away and everyone was worried about me.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      
+      <div class="card col">
+        <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+        <div class="card-body">
+          <h5 class="card-title">Published Date 02/24/2022</h5>
+          <p class="card-text">I was restless throughout the night so I had a few dreams. There was a big race I was watching on a running track, both on foot and with transports, including a bubble car you peddle yourself from my childhood. I was then a time traveller who had come back to warn people of things that were going to happen. A guy I was with once in college told me he loved me. I was at dinner speaking Spanish to someone. My Medium article got published, dreaming of my Medium stats and notifications because it was the last thing I dID before I went to sleep.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card col">
+        <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+        <div class="card-body">
+          <h5 class="card-title">Published Date 02/25/2022</h5>
+          <p class="card-text">Found out that my cat Sally had died years ago and was replaced with a cat who lived across the road and looked exactly like her.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script src="./script.js"></script>
   <script src="/assets/js/app.js"></script>
 </body>
 

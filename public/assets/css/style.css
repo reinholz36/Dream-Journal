@@ -1,11 +1,25 @@
 body {
-  color: white;
+  /* color: white;
   background-size: cover;
   height:100%
+  */
+  background-image: url(/images/aurora.jpg);
+    background-size: cover;
+    background-attachment:fixed;
+    background-position: 80%;
+}
+
+.hero {
+  margin: 6rem 6rem 0 6rem;
+  padding: 2rem;
 }
 
 .jumbotron {
   background: rgba(0,0,0,0);
+}
+
+.spacing{
+  margin: 6rem;
 }
 
 .modal {
