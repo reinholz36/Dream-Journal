@@ -58,7 +58,7 @@ body {
 #update-err-msg,
 #login-err-msg,
 #create-err-msg {
-  color: red !important;
+  color: yellow !important;
 }
 
 #go-home {
@@ -73,7 +73,7 @@ body {
   height: 100%;
   border-radius: 0.25rem;
   margin-bottom: 2%;
-  width: 40vw;
+  width: 100vw;
 }
 
 [data-useremail="true"] {
@@ -148,12 +148,6 @@ hr {
 }
 
 /* Media Queries */
-
-@media screen and (max-width: 760px) {
-  .container {
-    width: 100vw;
-  }
-}
 
 @media screen and (max-width: 574px) {
   .font-utility {
