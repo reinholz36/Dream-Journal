@@ -1,29 +1,34 @@
 {{> nav/nav-block}}
 
 <div id="main-container" class="container">
-  
-   <div class="row">
-          <div class="col">
+  <div class="row">
+    <div class="jumbotron jumbotron-fluid hero">
+      {{!-- align="center" removed from div class--}}
+      <p class="display-4 text-white">Welcome to <strong>Dream Journal</strong></p>
+      <hr class="my-4">
+      <div class="col">
+        {{#if isloggedin}}
+        <p class="display-5 text-white text-center">Your compass for recording and understanding dreams. 
+            <br>
+          You are logged in as {{user.firstName}} {{user.lastName}}
+          <a href="/logout"> <button type="btn" class="btn btn-dark">Logout</button></a>
+        {{else}}
+          <p class="display-5 text-white text-center">Your compass for recording and understanding dreams. 
+            <br>
+            Select <a class="signup" href="/register" data-register={{register}}>Sign Up 🧭</a> to use the Dream Journal</p>
+        {{/if}}
+        <h5 id="login-err-msg"></h5>
+      </div>
+    </div>
+  </div>
+   <div class="row quotespacing">
+        <div class="col">
             <h1 class="display-4 text-white">“I think of dreaming as overnight therapy.”</h1>
             <p class="lead text-white">
               — MATTHEW WALKER, PHD NEUROSCIENCE & PSYCHOLOGY
               </p>
         </div>
 
-  <div class="jumbotron jumbotron-fluid hero row">
-    {{!-- align="center" removed from div class--}}
-    <p class="lead">Welcome to <strong>Dream Journal</strong></p>
-    <hr class="my-4">
-    <div class="col">
-      {{#if isloggedin}}
-        You are logged in as {{user.firstName}} {{user.lastName}}
-        <a href="/logout"> <button type="btn" class="btn">Logout</button></a>
-      {{else}}
-        <p>Select <a class="nav-link" href="/register" data-register={{register}}>Sign Up</a> to use the Dream Journal</p>
-      {{/if}}
-      <h5 id="login-err-msg"></h5>
-    </div>
-  </div>
 </div>
 
 {{> modal/login-block}}
