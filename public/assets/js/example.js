@@ -4,6 +4,8 @@ const $exampleDescription = $('#example-description');
 const $submitBtn = $('#submit');
 const $exampleList = $('#example-list');
 
+const $emojiValue = $('#emoji');
+
 // The API object contains methods for each kind of request we'll make
 const API = {
   saveExample: function (example) {
@@ -67,6 +69,7 @@ const handleFormSubmit = function (event) {
   const example = {
     text: $exampleText.val().trim(),
     description: $exampleDescription.val().trim(),
+    emoji: $emojiValue.val().trim(),
     UserId: window.userId
   };
 
@@ -81,6 +84,7 @@ const handleFormSubmit = function (event) {
 
   $exampleText.val('');
   $exampleDescription.val('');
+  $emojiValue.val('');
 };
 
 // handleDeleteBtnClick is called when an example's delete button is clicked
