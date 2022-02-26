@@ -147,6 +147,10 @@ hr {
   background-color: #3e8e41;
 }
 
+.msg-margin {
+  margin-top: 0.5rem;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 574px) {
