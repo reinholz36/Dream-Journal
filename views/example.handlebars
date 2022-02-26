@@ -10,7 +10,7 @@
           {{!-- Below is code for the dropdown --}}
             <div class="dropdown" style="float:right;">
               {{!-- <button class="dropbtn">How are you feeling?</button> --}}
-              <label for="emoji">How are you feeling?</label>
+              <label for="emoji">How are you feeling? ➕ </label>
               <select id="emoji" class="dropdown-content">
                 <option value="">--Select Mood--</option>
                 <option value="😎">😎</option>
@@ -38,7 +38,7 @@
         <ul id="example-list" class="list-group">
           {{#each examples}}
           <li data-id="{{this.id}}" class="list-group-item">
-            <a href="example/{{this.id}}">{{this.text}}</a>
+            <a class="pastjournalentrymarker" href="example/{{this.id}}">{{this.createdAt}} <br> {{this.text}} {{this.emoji}}</a>
             <button class="btn btn-dark float-right delete">X</button>
           </li>
           {{/each}}
