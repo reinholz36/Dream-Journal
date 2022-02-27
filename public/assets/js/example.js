@@ -3,7 +3,6 @@ const $exampleText = $('#example-text');
 const $exampleDescription = $('#example-description');
 const $submitBtn = $('#submit');
 const $exampleList = $('#example-list');
-
 const $emojiValue = $('#emoji');
 
 // The API object contains methods for each kind of request we'll make
@@ -37,7 +36,8 @@ const refreshExamples = function () {
   API.getExamples().then(function (data) {
     const $examples = data.map(function (example) {
       const $a = $('<a>')
-        .text(example.text)
+        .text(example.createdAt + " " + example.text + " " +  example.emoji)
+
         .attr('href', '/example/' + example.id);
 
       const $li = $('<li>')
