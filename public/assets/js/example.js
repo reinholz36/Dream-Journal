@@ -35,8 +35,9 @@ const API = {
 const refreshExamples = function () {
   API.getExamples().then(function (data) {
     const $examples = data.map(function (example) {
-      const $a = $('<a>')
-        .text(example.createdAt + " " + example.text + " " +  example.emoji)
+      var createdAttime = moment.utc(example.createdAt).format("MM/DD/YYYY");
+      const $a = $('<a class="pastjournalentrymarker">')
+        .text(createdAttime + " " + example.text + " " +  example.emoji)
 
         .attr('href', '/example/' + example.id);
 

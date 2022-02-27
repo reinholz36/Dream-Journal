@@ -33,6 +33,13 @@ app.use(helmet.hsts({
   maxAge: moment.duration(1, 'years').asMilliseconds()
 }));
 
+const helpers = require('./utils/helpers');
+
+const hbs = exphbs.create({ helpers });
+
+app.engine('handlebars', hbs.engine);
+app.set('view engine', 'handlebars');
+
 // catch 404 and forward to error handler
 if (app.get('env') !== 'development') {
   app.use((req, res, next) => {

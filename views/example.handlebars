@@ -38,7 +38,7 @@
         <ul id="example-list" class="list-group">
           {{#each examples}}
           <li data-id="{{this.id}}" class="list-group-item">
-            <a class="pastjournalentrymarker" href="example/{{this.id}}">{{this.createdAt}} <br> {{this.text}} {{this.emoji}}</a>
+            <a class="pastjournalentrymarker" href="example/{{this.id}}">{{format_date this.createdAt}} {{this.text}} {{this.emoji}}</a>
             <button class="btn btn-dark float-right delete">X</button>
           </li>
           {{/each}}
