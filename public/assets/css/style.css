@@ -5,6 +5,11 @@ body {
   background-position: 80%;
 }
 
+.topnav{
+	list-style: none;
+}
+
+
 .font-utility {
   font-size: 2rem;
 }
