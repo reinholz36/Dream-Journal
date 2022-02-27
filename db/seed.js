@@ -16,6 +16,7 @@ module.exports = (db) => {
       db.Example.create({
         text: 'Sample item',
         description: 'Adam can\'t see this',
+        emoji: '💩',
         UserId: 2
       });
     });

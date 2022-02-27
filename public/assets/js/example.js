@@ -3,6 +3,7 @@ const $exampleText = $('#example-text');
 const $exampleDescription = $('#example-description');
 const $submitBtn = $('#submit');
 const $exampleList = $('#example-list');
+const $emojiValue = $('#emoji');
 
 // The API object contains methods for each kind of request we'll make
 const API = {
@@ -34,8 +35,10 @@ const API = {
 const refreshExamples = function () {
   API.getExamples().then(function (data) {
     const $examples = data.map(function (example) {
-      const $a = $('<a>')
-        .text(example.text)
+      var createdAttime = moment.utc(example.createdAt).format("MM/DD/YYYY");
+      const $a = $('<a class="pastjournalentrymarker">')
+        .text(createdAttime + " " + example.text + " " +  example.emoji)
+
         .attr('href', '/example/' + example.id);
 
       const $li = $('<li>')
@@ -46,7 +49,7 @@ const refreshExamples = function () {
         .append($a);
 
       const $button = $('<button>')
-        .addClass('btn btn-danger float-right delete')
+        .addClass('btn btn-dark float-right delete')
         .text('ｘ');
 
       $li.append($button);
@@ -67,6 +70,7 @@ const handleFormSubmit = function (event) {
   const example = {
     text: $exampleText.val().trim(),
     description: $exampleDescription.val().trim(),
+    emoji: $emojiValue.val().trim(),
     UserId: window.userId
   };
 
@@ -81,6 +85,7 @@ const handleFormSubmit = function (event) {
 
   $exampleText.val('');
   $exampleDescription.val('');
+  $emojiValue.val('');
 };
 
 // handleDeleteBtnClick is called when an example's delete button is clicked
