@@ -5,6 +5,10 @@ body {
   background-position: 80%;
 }
 
+.topnav {
+  list-style: none;
+}
+
 .font-utility {
   font-size: 2rem;
 }
@@ -43,7 +47,7 @@ body {
 } */
 .pastjournalentrymarker {
   text-decoration: none;
-  color:#444;
+  color: #444;
 }
 
 .quotespacing {
