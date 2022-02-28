@@ -8,20 +8,18 @@
         <form class="clearfix mb-4" action="POST">
 
           <div class="form-group">
-            <label class="text-white" for="example-text" >1. What would you name your dream?</label>
+            <label class="text-white" for="example-text" >What would you name your dream?</label>
             <input type="text" id="example-text" class="form-control" aria-describedby="example-text" placeholder="Enter your dream">
           </div>
           <div class="form-group">
-            <label class="text-white" for="example-description">2. How would you describe your dream?</label>
+            <label class="text-white" for="example-description">How would you describe your dream?</label>
             <textarea class="form-control" id="example-description" aria-describedby="example-description" placeholder="Enter description, click Dream On to submit"></textarea>
           </div>
-           {{!-- Below is code for the dropdown --}}
-            <div class="dropdown">
-              {{!-- <button class="dropbtn">How are you feeling?</button> --}}
-              <label class="text-white" for="emoji">3. How are you feeling? </label>
-              {{!-- <i class="fa-solid fa-plus"></i> --}}
-              <select id="emoji" class="dropdown-content">
-                <option value="">--Select Mood--</option>
+  
+              <label class="text-white" for="emoji">How are you feeling? </label>
+              <br>
+              <select id="emoji" class="form-select form-select-lg mb-3 borderonentryq" aria-label=".form-select-lg example">
+                <option selected>--Select Mood--</option>
                 <option value="😎">😎</option>
                 <option value="😄">😄</option>
                 <option value="🥰">🥰</option>
@@ -31,7 +29,7 @@
                 <option value="💩">💩</option>
                 <option value="☠️">☠️</option>
               </select>
-            </div>
+            
             <br>
           <button id="submit" class="btn btn-dark float-right">Dream On &#129304</button>
         </form>
