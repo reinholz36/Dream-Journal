@@ -8,16 +8,16 @@ Dani Reinholz, Wesley Bryant, Alan M Do, Jonny Martin
 
 ## Table of Contents
 
-- [Technologies](#technologies)
-- [User Story](#userstory)
-- [New Techonologies Used by Group](#newtechnologiesusedbygroup)
-- [Link to live site](#linktolivesite)
+- [Technologies Used](#technologies-used)
+- [User Story](#user-story)
+- [New Tech Used by Group](#new-tech-used-by-group)
+- [Link to live site](#link-to-live-site)
 - [Milestones](#milestones)
 - [Challenges](#challenges)
-- [Future Development](#futuredevelopment)
-- [Slides Deck](#slidesdeck)
+- [Future Development](#future-development)
+- [Slides Deck](#slides-deck)
 
-## Technologies used:
+## Technologies Used
 
 - HTML
 - CSS
@@ -38,12 +38,12 @@ Dani Reinholz, Wesley Bryant, Alan M Do, Jonny Martin
 3. When I submit an entry I would like for a date tag to be added along with the title and emoji to past entries for later reference.
 4. When I click on a past journal entry I would like to see the full dream details.
 
-## New Techonologies Used by Group
+## New Tech Used by Group
 
 - Cloudinary for save and using large images
 - https://www.canva.com/ for color pallette in deciding page styling
 
-## Link to live site:
+## Link to live site
 
 https://frozen-atoll-87689.herokuapp.com/
 
@@ -51,14 +51,14 @@ https://frozen-atoll-87689.herokuapp.com/
 <img src="./images/dreamjournal.jpg" alt="Dream Journal" page title">
 </a>
 
-## Milestones:
+## Milestones
 
 1. Dani established CSS styling, routed emojis, captured and converted timestamps, added hamburger menu display, added favicon.
 2. Wesley wrote the initial front end display for emoji selection and adding edit function to journal post.
 3. Alan added font and styling to laptop, tablet, and mobile display.
 4. Jonny added styling including the dream on button for journal entry submissions.
 
-## Challenges:
+## Challenges
 
 - Capturing / converting timestamps
 - Hamburger menu display
