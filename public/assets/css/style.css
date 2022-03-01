@@ -54,6 +54,10 @@ body {
   border-radius: .25rem;
 }
 
+.editbuttonspace {
+  margin-right: 2rem;
+}
+
 #user-form,
 .header-wrap,
 #create-form,

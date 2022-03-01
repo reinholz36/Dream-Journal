@@ -15,7 +15,7 @@ module.exports = function (db) {
     // Edit a Dream 
     editDream: function (req, res) {
       db.Example.update(
-        {text:req.body.text, description:req.body.description},
+        {text:req.body.text, description:req.body.description, emoji:req.body.emoji},
         { where: { id: req.params.id } }
       ).then(function (dbExample) {
         res.json(dbExample);

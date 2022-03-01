@@ -5,6 +5,11 @@ const $submitBtn = $('#submit');
 const $exampleList = $('#example-list');
 const $emojiValue = $('#emoji');
 
+const editText = document.getElementById('editText');
+const editDescription = document.getElementById('editDescription');
+const editEmoji = document.getElementById('editEmoji');
+
+
 // The API object contains methods for each kind of request we'll make
 const API = {
   saveExample: function (example) {
@@ -27,7 +32,12 @@ const API = {
     return $.ajax({
       url: 'api/example/' + id,
       type: 'PUT',
-      data: {"text":"THIS WORKED", "description":"SO DID THIS"}
+
+      data: {
+        "text":editText.innerHTML, 
+        "description":editDescription.innerHTML,
+        "emoji":editEmoji.innerHTML,
+      }
     });
   }, 
   deleteExample: function (id) {

@@ -17,10 +17,10 @@ async function editFormHandler(event) {
   
     if (response.ok) {
       document.location.replace('/dashboard/');
-      console.log("line 20, edit-dream.js", document.location.replace('/dashboard/'));
+      
     } else {
       alert(response.statusText);
-      console.log("line 23 edit-dream.js",alert(response.statusText));
+  
     }
   }
   

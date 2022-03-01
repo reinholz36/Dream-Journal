@@ -37,9 +37,18 @@
         <ul id="example-list" class="list-group">
           {{#each examples}}
           <li data-id="{{this.id}}" class="list-group-item">
-            <a class="pastjournalentrymarker" href="example/{{this.id}}">{{format_date this.createdAt}} {{this.text}} {{this.emoji}}</a>
-            <button class="btn btn-dark float-right editDream">Edit</button>
+            {{format_date this.createdAt}} 
+            <a class="pastjournalentrymarker" href="example/{{this.id}}"><i class="fa-solid fa-expand float-right"></i></a>
+            <br>
+            <strong>Dream Name</strong>: {{example.text}}</p>
+            <p contenteditable="true" id="editText">{{this.text}}</p> 
+            <strong>Description:</strong>
+            <p contenteditable="true" id="editDescription">{{this.description}}</p>
+            <strong>How you were feeling</strong>:
+            <p contenteditable="true" id="editEmoji">{{this.emoji}}</p>
+  
             <button class="btn btn-dark float-right delete">X</button>
+            <button class="btn btn-dark float-right editDream editbuttonspace">Save Edit</button>
           </li>
           {{/each}}
         </ul>

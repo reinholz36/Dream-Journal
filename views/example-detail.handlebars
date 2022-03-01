@@ -6,17 +6,24 @@
       <div class="card mt-4">
         <div class="card-body">
           <h5 class="card-title">{{format_date example.createdAt}}</h5>
+          {{!-- <p>
+            <strong>Entry ID:</strong> 
+            {{example.id}}
+          </p> --}}
+          
           <p>
-            <strong>Entry ID</strong>: {{example.id}}</p>
+            <strong>Dream name:</strong> 
+            {{example.text}}
+          </p>
           <p>
+            <strong>Description:</strong> 
+            {{example.description}}
+          </p>
           <p>
-            <strong>Title</strong>: {{example.text}}</p>
-          <p>
-            <strong>Description:</strong> {{example.description}}</p>
-          <p>
-            <strong>How you were feeling</strong>: {{example.emoji}}</p>
-          <p>
-            <a href="/example" class="pastjournalentrymarker">← Back To Journal</a>
+            <strong>How you were feeling:</strong> 
+            {{example.emoji}}
+          </p>
+            <a href="/example">← Back To Journal</a>
         </div>
       </div>
     </div>
@@ -24,3 +31,4 @@
 </div>
 
 {{> modal/login-block}}
+
