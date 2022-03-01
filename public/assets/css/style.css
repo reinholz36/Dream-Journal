@@ -5,10 +5,9 @@ body {
   background-position: 80%;
 }
 
-.topnav{
-	list-style: none;
+.topnav {
+  list-style: none;
 }
-
 
 .font-utility {
   font-size: 2rem;
@@ -41,18 +40,18 @@ body {
   color: cornflowerblue;
   font-weight: bold;
 }
-/* .btn {
-  color:white;
-  background:#cadde1;
-  border: 1px solid white;
-} */
+
 .pastjournalentrymarker {
   text-decoration: none;
-  color:#444;
+  color: #444;
 }
 
 .quotespacing {
   padding-left: 2%;
+}
+
+.borderonentryq {
+  border-radius: .25rem;
 }
 
 #user-form,

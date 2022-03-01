@@ -2,7 +2,7 @@
 
 <div class="container">
   <header align="center" class="header-wrap">
-    <h3>View or update your account</h3>
+    <h3>Account Details</h3>
     <div class="userId">
       {{!-- <h3>Welcome, {{userInfo.firstName}}</h3> --}}
       {{!-- <h5 id="user-number" data-useremail="{{userInfo.email}}">Account email: {{userInfo.email}}</h5> --}}
@@ -13,22 +13,22 @@
   <form id="user-form">
     <div class="form-row">
       <div class="form-group col-md-6">
-        <label for="inputFirst">First Name</label>
-        <input type="text" class="form-control" id="inputFirst" value="{{userInfo.firstName}}" placeholder="John">
+        <label class="text-white" for="inputFirst">First Name</label>
+        <input type="text" class="form-control" id="inputFirst" value="{{userInfo.firstName}}" placeholder="Enter First Name Here">
       </div>
       <div class="form-group col-md-6">
-        <label for="inputLast">Last Name</label>
-        <input type="text" class="form-control" id="inputLast" value="{{userInfo.lastName}}" placeholder="Doe">
+        <label class="text-white" for="inputLast">Last Name</label>
+        <input type="text" class="form-control" id="inputLast" value="{{userInfo.lastName}}" placeholder="Enter Last Name Here">
       </div>
     </div>
 
     <div class="form-row">
       <div class="form-group col-md-6">
-        <label for="inputPassword">Email</label>
+        <label class="text-white" for="inputPassword">Email</label>
         <input type="text" class="form-control" id="inputEmail" value="{{userInfo.email}}">
       </div>
       <div class="form-group col-md-6">
-        <label for="inputPassword">Password</label>
+        <label class="text-white" for="inputPassword">Password</label>
         <input type="password" class="form-control" id="inputPassword" value="{{userInfo.password}}">
       </div>
     </div>
