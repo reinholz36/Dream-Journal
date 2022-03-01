@@ -7,12 +7,19 @@
         <h2 class="msg-margin text-center">{{msg}}</h2>
         <form class="clearfix mb-4" action="POST">
 
-          {{!-- Below is code for the dropdown --}}
-            <div class="dropdown" style="float:right;">
-              {{!-- <button class="dropbtn">How are you feeling?</button> --}}
-              <label class="text-white" for="emoji">How are you feeling? <i class="fa-solid fa-plus"></i> </label>
-              <select id="emoji" class="dropdown-content">
-                <option value="">--Select Mood--</option>
+          <div class="form-group">
+            <label class="text-white" for="example-text" >What would you name your dream?</label>
+            <input type="text" id="example-text" class="form-control" aria-describedby="example-text" placeholder="Enter your dream">
+          </div>
+          <div class="form-group">
+            <label class="text-white" for="example-description">How would you describe your dream?</label>
+            <textarea class="form-control" id="example-description" aria-describedby="example-description" placeholder="Enter description, click Dream On to submit"></textarea>
+          </div>
+  
+              <label class="text-white" for="emoji">How are you feeling? </label>
+              <br>
+              <select id="emoji" class="form-select form-select-lg mb-3 borderonentryq" aria-label=".form-select-lg example">
+                <option selected>--Select Mood--</option>
                 <option value="😎">😎</option>
                 <option value="😄">😄</option>
                 <option value="🥰">🥰</option>
@@ -22,16 +29,8 @@
                 <option value="💩">💩</option>
                 <option value="☠️">☠️</option>
               </select>
-            </div>
-
-          <div class="form-group">
-            <label class="text-white" for="example-text" >Dream Title</label>
-            <input type="text" id="example-text" class="form-control" aria-describedby="example-text" placeholder="Enter your dream">
-          </div>
-          <div class="form-group">
-            <label class="text-white" for="example-description">Dream Description</label>
-            <textarea class="form-control" id="example-description" aria-describedby="example-description" placeholder="Enter description, click Dream On to submit"></textarea>
-          </div>
+            
+            <br>
           <button id="submit" class="btn btn-dark float-right">Dream On &#129304</button>
         </form>
         <h4 class="text-center"> Past Journal Entries:</h4>
