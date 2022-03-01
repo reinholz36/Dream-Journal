@@ -12,6 +12,15 @@ module.exports = function (db) {
         res.json(dbExample);
       });
     },
+    // Edit a Dream 
+    editDream: function (req, res) {
+      db.Example.update(
+        {text:req.body.text, description:req.body.description},
+        { where: { id: req.params.id } }
+      ).then(function (dbExample) {
+        res.json(dbExample);
+      });
+    },
     // Delete an example by id
     deleteExample: function (req, res) {
       db.Example.destroy({ where: { id: req.params.id } }).then(function (dbExample) {

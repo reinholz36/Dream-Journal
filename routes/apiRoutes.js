@@ -16,6 +16,7 @@ module.exports = (passport, db) => {
   // App
   router.get('/examples', AppController.getExamples);
   router.post('/examples', AppController.createExample);
+  router.put('/example/:id', AppController.editDream);
   router.delete('/examples/:id', AppController.deleteExample);
 
   return router;

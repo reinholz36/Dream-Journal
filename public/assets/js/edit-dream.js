@@ -1,0 +1,28 @@
+async function editFormHandler(event) {
+    event.preventDefault();
+  
+    const title = document.querySelector('input[name="dream-title"]').value.trim();
+    const id = window.location.toString().split('/')[
+      window.location.toString().split('/').length - 1
+    ];
+    const response = await fetch(`/example/${id}`, {
+      method: 'PUT',
+      body: JSON.stringify({
+        title
+      }),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    });
+  
+    if (response.ok) {
+      document.location.replace('/dashboard/');
+      console.log("line 20, edit-dream.js", document.location.replace('/dashboard/'));
+    } else {
+      alert(response.statusText);
+      console.log("line 23 edit-dream.js",alert(response.statusText));
+    }
+  }
+  
+  document.querySelector('.edit-post-form').addEventListener('submit', editFormHandler);
+  
