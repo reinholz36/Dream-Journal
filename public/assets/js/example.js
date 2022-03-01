@@ -27,7 +27,7 @@ const API = {
     return $.ajax({
       url: 'api/example/' + id,
       type: 'PUT',
-      data: JSON.stringify(id),
+      data: {"text":"THIS WORKED", "description":"SO DID THIS"}
     });
   }, 
   deleteExample: function (id) {
