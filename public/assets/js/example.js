@@ -23,6 +23,13 @@ const API = {
       type: 'GET'
     });
   },
+  editDream: function (id) {
+    return $.ajax({
+      url: 'api/example/' + id,
+      type: 'PUT',
+      data: JSON.stringify(id),
+    });
+  }, 
   deleteExample: function (id) {
     return $.ajax({
       url: 'api/examples/' + id,
@@ -88,6 +95,14 @@ const handleFormSubmit = function (event) {
   $emojiValue.val('');
 };
 
+const handleEditBtnClick = function () {
+  const idToEdit = $(this).parent().attr('data-id');
+
+  API.editDream(idToEdit).then(function () {
+    refreshExamples();
+  });
+};
+
 // handleDeleteBtnClick is called when an example's delete button is clicked
 // Remove the example from the db and refresh the list
 const handleDeleteBtnClick = function () {
@@ -100,4 +115,5 @@ const handleDeleteBtnClick = function () {
 
 // Add event listeners to the submit and delete buttons
 $submitBtn.on('click', handleFormSubmit);
+$exampleList.on('click', '.editDream', handleEditBtnClick);
 $exampleList.on('click', '.delete', handleDeleteBtnClick);

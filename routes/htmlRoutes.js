@@ -8,10 +8,10 @@ module.exports = (db) => {
     } else {
       res.render('register');
     }
-  });
+});
 
-  // Load profile page
-  router.get('/profile', (req, res) => {
+// Load profile page
+router.get('/profile', (req, res) => {
     if (req.isAuthenticated()) {
       db.User.findOne({
         where: {
@@ -28,10 +28,10 @@ module.exports = (db) => {
     } else {
       res.redirect('/');
     }
-  });
+});
 
-  // Load dashboard page
-  router.get('/', (req, res) => {
+// Load dashboard page
+router.get('/', (req, res) => {
     if (req.isAuthenticated()) {
       const user = {
         user: req.session.passport.user,
@@ -41,10 +41,10 @@ module.exports = (db) => {
     } else {
       res.render('dashboard');
     }
-  });
+});
 
-  // Load dashboard page
-  router.get('/dashboard', (req, res) => {
+// Load dashboard page
+router.get('/dashboard', (req, res) => {
     if (req.isAuthenticated()) {
       const user = {
         user: req.session.passport.user,
@@ -54,10 +54,10 @@ module.exports = (db) => {
     } else {
       res.render('dashboard');
     }
-  });
+});
 
-  // Load example index page
-  router.get('/example', function (req, res) {
+// Load example index page
+router.get('/example', function (req, res) {
     if (req.isAuthenticated()) {
       db.Example.findAll({ where: { UserId: req.session.passport.user.id }, raw: true }).then(function (dbExamples) {
         res.render('example', {
@@ -70,10 +70,10 @@ module.exports = (db) => {
     } else {
       res.redirect('/');
     }
-  });
+});
 
-  // Load example page and pass in an example by id
-  router.get('/example/:id', function (req, res) {
+// Load example page and pass in an example by id
+router.get('/example/:id', function (req, res) {
     if (req.isAuthenticated()) {
       db.Example.findOne({ where: { id: req.params.id }, raw: true }).then(function (dbExample) {
         res.render('example-detail', {
@@ -85,10 +85,52 @@ module.exports = (db) => {
     } else {
       res.redirect('/');
     }
-  });
+});
 
-  // Logout
-  router.get('/logout', (req, res, next) => {
+// EXPERIMENT trying to GET dream entries to edit them
+router.get('/example/:id', (req, res) => {
+  Post.findByPk(req.params.id, {
+    attributes: [
+      'id',
+      'text',
+      'emoji',
+      'description',
+      'createdAt',
+    ],
+    include: [
+      {
+        model: Comment,
+        attributes: ['id', 'text', 'emoji', 'description', 'createdAt'],
+        include: {
+          model: User,
+          attributes: ['firstName']
+        }
+      },
+      {
+        model: User,
+        attributes: ['firstName']
+      }
+    ]
+  })
+    .then(dbPostData => {
+      if (dbPostData) {
+        const post = dbPostData.get({ plain: true });
+        
+        res.render('edit-dream', {
+          post,
+          loggedIn: true
+        });
+      } else {
+        res.status(404).end();
+      }
+    })
+    .catch(err => {
+      res.status(500).json(err);
+    });
+});
+
+// Logout
+router.get('/logout', (req, res, next) => {
     req.logout();
     req.session.destroy((err) => {
       if (err) {
@@ -97,10 +139,10 @@ module.exports = (db) => {
       res.clearCookie('connect.sid', { path: '/' });
       res.redirect('/');
     });
-  });
+});
 
-  // Render 404 page for any unmatched routes
-  router.get('*', function (req, res) {
+// Render 404 page for any unmatched routes
+router.get('*', function (req, res) {
     res.render('404');
   });
 

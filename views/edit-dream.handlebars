@@ -1,11 +1,9 @@
-{{> nav/nav-block}}
-
-<div id="home">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h2 class="msg-margin">{{msg}}</h2>
-        <form class="clearfix mb-4" action="POST">
+<article>
+  <a href="/example"> &larr; Back to dream journal entry page</a>
+  <h2>
+    Edit Post
+  </h2>
+  <form class="clearfix mb-4" action="POST">
 
           {{!-- Below is code for the dropdown --}}
             <div class="dropdown" style="float:right;">
@@ -26,7 +24,7 @@
 
           <div class="form-group">
             <label for="example-text" >Dream Title</label>
-            <input type="text" id="example-text" class="form-control" aria-describedby="example-text" placeholder="Enter your dream">
+            <input type="text" id="example-text" name="dream-title" class="form-control" aria-describedby="example-text" placeholder="Enter your dream">
           </div>
           <div class="form-group">
             <label for="example-description">Dream Description</label>
@@ -34,25 +32,6 @@
           </div>
           <button id="submit" class="btn btn-dark float-right">Dream On &#129304</button>
         </form>
-        <h4>Past Journal Entries:</h4>
-        <ul id="example-list" class="list-group">
-          {{#each examples}}
-          <li data-id="{{this.id}}" class="list-group-item">
-            <a class="pastjournalentrymarker" href="example/{{this.id}}">{{format_date this.createdAt}} {{this.text}} {{this.emoji}}</a>
-            <button class="btn btn-dark float-right editDream">Edit</button>
-            <button class="btn btn-dark float-right delete">X</button>
-          </li>
-          {{/each}}
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
+</article>
 
-<script src="/assets/js/example.js"></script>
-
-{{> modal/login-block}}
-
-<script>
-  var userId = {{userInfo.id}};
-</script>
+<script src="/js/edit-dream.js"></script>
