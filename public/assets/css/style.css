@@ -47,6 +47,7 @@ body {
   padding-right: .75rem;
   color: #444;
   margin-right: 2rem;
+  word-break: break-word;
 }
 
 .quotespacing {
@@ -174,5 +175,13 @@ hr {
   }
   .secondary-font-utility {
     font-size: 1rem;
+  }
+  .pastjournalentrymarker {
+    text-decoration: none;
+    text-align: center;
+    padding-right: .75rem;
+    color: #444;
+    margin-right: .75rem;
+    word-break: break-word;
   }
 }
