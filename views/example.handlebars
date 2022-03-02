@@ -47,8 +47,10 @@
             <strong>How you were feeling</strong>:
             <p contenteditable="true" id="editEmoji">{{this.emoji}}</p> --}}
          
-            <button class="btn btn-dark float-right delete">X</button>
+            <button class="btn btn-dark float-right delete"><i class="fa-solid fa-trash-can"></i></button>
             {{!-- <button class="btn btn-dark float-right editDream editbuttonspace">Save Edit</button> --}}
+            <a class="btn btn-dark text-white pastjournalentrymarker float-right" href="example/{{this.id}}"><i class="fa-solid fa-expand"></i>
+            </a>
           </li>
           {{/each}}
         </ul>
