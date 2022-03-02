@@ -70,7 +70,13 @@ const refreshExamples = function () {
         .html('<i class="fa-solid fa-trash-can"></i>');
       $li.append($deletebutton);
 
-    $li.append($expandbutton);
+    //   // expand button
+    //   const $expandbutton = $('<a>')
+    //   .html('<i class="fa-solid fa-expand"></i>')
+    //   .attr({
+    //     class: 'btn btn-dark text-white pastjournalentrymarker float-right',
+    //     "href": '/example/' + example.id});
+    // $li.append($expandbutton);
 
       return $li;
     });
