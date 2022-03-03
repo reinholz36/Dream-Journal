@@ -60,6 +60,11 @@ body {
   word-break: break-word;
 }
 
+.pastjournalentrymarker:hover {
+  color:#04aa6d;
+  text-decoration: none;
+}
+
 .quotespacing {
   padding-left: 2%;
 }
