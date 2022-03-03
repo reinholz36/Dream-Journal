@@ -33,23 +33,11 @@
             <br>
           <button id="submit" class="btn btn-dark float-right">Dream On &#129304</button>
         </form>
-        <h4 class="text-center text-white">Journal Entries:</h4>
         <ul id="example-list" class="list-group">
           {{#each examples}}
           <li data-id="{{this.id}}" class="list-group-item">
-            
             <a class="pastjournalentrymarker" href="example/{{this.id}}">{{format_date this.createdAt}} {{this.text}} {{this.emoji}}</a>
-            {{!-- <br> --}}
-            {{!-- <strong>Dream Name</strong>: {{example.text}}</p>
-            <p contenteditable="true" id="editText">{{this.text}}</p> 
-            <strong>Description:</strong>
-            <p contenteditable="true" id="editDescription">{{this.description}}</p>
-            <strong>How you were feeling</strong>:
-            <p contenteditable="true" id="editEmoji">{{this.emoji}}</p> --}}
-         
             <button class="btn btn-dark float-right delete"><i class="fa-solid fa-trash-can"></i></button>
-            {{!-- <button class="btn btn-dark float-right editDream editbuttonspace">Save Edit</button> --}}
-            
           </li>
           {{/each}}
         </ul>

@@ -1,4 +1,9 @@
+:root {
+--main-bg-color: #444
+}
+
 body {
+  background-color: var(--main-bg-color);
   background-image: url(https://res.cloudinary.com/dlogu18ac/image/upload/v1645721194/aurora_tzh1an.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -41,11 +46,16 @@ body {
   font-weight: bold;
 }
 
+.signup:hover {
+  text-decoration: none;
+  color: orange;
+}
+
 .pastjournalentrymarker {
   text-decoration: none;
   text-align: center;
   padding-right: 0.75rem;
-  color: #444;
+  color: var(--main-bg-color);
   margin-right: 2rem;
   word-break: break-word;
 }
@@ -118,7 +128,7 @@ hr {
 }
 
 .card-body {
-  color: #444;
+  color: var(--main-bg-color);
 }
 
 /* Test CSS for emojis */
@@ -180,7 +190,7 @@ hr {
     text-decoration: none;
     text-align: center;
     padding-right: 0.75rem;
-    color: #444;
+    color: var(--main-bg-color);
     margin-right: 0.75rem;
     word-break: break-word;
   }
