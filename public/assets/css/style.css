@@ -37,14 +37,14 @@ body {
 .signup {
   text-decoration: none;
   font-size: large;
-  color: cornflowerblue;
+  color: yellow;
   font-weight: bold;
 }
 
 .pastjournalentrymarker {
   text-decoration: none;
   text-align: center;
-  padding-right: .75rem;
+  padding-right: 0.75rem;
   color: #444;
   margin-right: 2rem;
   word-break: break-word;
@@ -55,7 +55,7 @@ body {
 }
 
 .borderonentryq {
-  border-radius: .25rem;
+  border-radius: 0.25rem;
 }
 
 .editbuttonspace {
@@ -179,9 +179,9 @@ hr {
   .pastjournalentrymarker {
     text-decoration: none;
     text-align: center;
-    padding-right: .75rem;
+    padding-right: 0.75rem;
     color: #444;
-    margin-right: .75rem;
+    margin-right: 0.75rem;
     word-break: break-word;
   }
 }
