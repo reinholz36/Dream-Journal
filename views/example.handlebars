@@ -9,7 +9,7 @@
 
           <div class="form-group">
             <label class="text-white" for="example-text" >What would you name your dream?</label>
-            <input type="text" id="example-text" class="form-control" aria-describedby="example-text" placeholder="Enter your dream">
+            <input type="text" id="example-text" class="form-control" aria-describedby="example-text" placeholder="Enter the name of your dream">
           </div>
           <div class="form-group">
             <label class="text-white" for="example-description">How would you describe your dream?</label>
@@ -31,13 +31,22 @@
               </select>
             
             <br>
-          <button id="submit" class="btn btn-dark float-right">Dream On &#129304</button>
+          <button id="submit" class="btn btn-dark float-right" >Dream On &#129304</button>
         </form>
         <ul id="example-list" class="list-group">
           {{#each examples}}
+          
           <li data-id="{{this.id}}" class="list-group-item">
-            <a class="pastjournalentrymarker" href="example/{{this.id}}">{{format_date this.createdAt}} {{this.text}} {{this.emoji}}</a>
-            <button class="btn btn-dark float-right delete"><i class="fa-solid fa-trash-can"></i></button>
+              
+                
+                
+                  <button class="btn btn-dark float-right delete"><i class="fa-solid fa-trash-can"></i></button>
+
+            <a class="pastjournalentrymarker" href="example/{{this.id}}">
+            {{format_date this.createdAt}} 
+            {{this.text}} 
+            {{this.emoji}}
+            </a>                
           </li>
           {{/each}}
         </ul>

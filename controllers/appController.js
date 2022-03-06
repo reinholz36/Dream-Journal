@@ -14,6 +14,7 @@ module.exports = function (db) {
     },
     // Edit a Dream 
     editDream: function (req, res) {
+      
       db.Example.update(
         {text:req.body.text, description:req.body.description, emoji:req.body.emoji},
         { where: { id: req.params.id } }
@@ -21,9 +22,12 @@ module.exports = function (db) {
         res.json(dbExample);
       });
     },
+
+
     // Delete an example by id
     deleteExample: function (req, res) {
-      db.Example.destroy({ where: { id: req.params.id } }).then(function (dbExample) {
+      db.Example.destroy({ where: { id: req.params.id } }
+        ).then(function (dbExample) {
         res.json(dbExample);
       });
     }

@@ -1,202 +1,208 @@
 :root {
---main-bg-color: #444
-}
-
-body {
-  background-color: var(--main-bg-color);
-  background-image: url(https://res.cloudinary.com/dlogu18ac/image/upload/v1645721194/aurora_tzh1an.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: 80%;
-}
-
-.topnav {
-  list-style: none;
-}
-
-.font-utility {
-  font-size: 2rem;
-}
-
-.secondary-font-utility {
-  font-size: 1rem;
-}
-
-.hero {
-  margin: 3rem 1rem 0 1rem;
-  padding: 2rem;
-}
-
-.jumbotron {
-  background: rgba(0, 0, 0, 0);
-}
-
-.spacing {
-  margin: 6rem;
-}
-
-.modal {
-  color: black;
-}
-
-.signup {
-  text-decoration: none;
-  font-size: large;
-  color: yellow;
-  font-weight: bold;
-}
-
-.signup:hover {
-  text-decoration: none;
-  color: orange;
-}
-
-.pastjournalentrymarker {
-  text-decoration: none;
-  text-align: center;
-  padding-right: 0.75rem;
-  color: var(--main-bg-color);
-  margin-right: 2rem;
-  word-break: break-word;
-}
-
-.pastjournalentrymarker:hover {
-  color:#04aa6d;
-  text-decoration: none;
-}
-
-.quotespacing {
-  padding-left: 2%;
-}
-
-.borderonentryq {
-  border-radius: 0.25rem;
-}
-
-.editbuttonspace {
-  margin-right: 2rem;
-}
-
-#user-form,
-.header-wrap,
-#create-form,
-.create-user-wrap {
-  padding: 20px;
-  border-radius: 15px;
-  margin: 20px 0;
-}
-
-#update-err-msg,
-#login-err-msg,
-#create-err-msg {
-  color: yellow !important;
-}
-
-#go-home {
-  width: auto;
-  height: 65px;
-}
-
-.container {
-  padding-bottom: 2%;
-  margin-top: 10%;
-  background: rgba(86, 101, 115, 0.6);
-  height: 100%;
-  border-radius: 0.25rem;
-  margin-bottom: 2%;
-  width: 100vw;
-}
-
-[data-useremail="true"] {
-  color: white !important;
-}
-[data-register="true"] {
-  color: white !important;
-}
-
-.lead {
-  font-size: 1.8rem;
-  font-weight: 500;
-}
-
-.userId h2,
-.header-wrap h1 {
-  text-transform: capitalize;
-}
-
-hr {
-  background-color: #fff !important;
-}
-
-.list-group-item {
-  line-height: 2.5;
-}
-
-.card-body {
-  color: var(--main-bg-color);
-}
-
-/* Test CSS for emojis */
-.dropbtn {
-  background-color: #04aa6d;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  right: 0;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
-}
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
-}
-
-.msg-margin {
-  margin-top: 0.5rem;
-}
-
-/* Media Queries */
-
-@media screen and (max-width: 574px) {
-  .font-utility {
-    font-size: 1.5rem;
+  --main-bg-color: #444
   }
+  
+  body {
+    background-color: var(--main-bg-color);
+    background-image: url(https://res.cloudinary.com/dlogu18ac/image/upload/v1645721194/aurora_tzh1an.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+  }
+  
+  .topnav {
+    list-style: none;
+  }
+  
+  .font-utility {
+    font-size: 2rem;
+  }
+  
   .secondary-font-utility {
     font-size: 1rem;
   }
+  
+  .hero {
+    margin: 3rem 1rem 0 1rem;
+    padding: 2rem;
+  }
+  
+  .jumbotron {
+    background: rgba(0, 0, 0, 0);
+  }
+  
+  .spacing {
+    margin: 6rem;
+  }
+  
+  .modal {
+    color: black;
+  }
+  
+  .signup {
+    text-decoration: none;
+    font-size: large;
+    color: yellow;
+    font-weight: bold;
+  }
+  
+  .signup:hover {
+    text-decoration: none;
+    color: orange;
+  }
+  
   .pastjournalentrymarker {
     text-decoration: none;
     text-align: center;
     padding-right: 0.75rem;
     color: var(--main-bg-color);
-    margin-right: 0.75rem;
+    margin-right: 2rem;
     word-break: break-word;
   }
-}
+  
+  .pastjournalentrymarker:hover {
+    color:#04aa6d;
+    text-decoration: none;
+  }
+  
+  .quotespacing {
+    padding-left: 2%;
+  }
+  
+  .borderonentryq {
+    border-radius: 0.25rem;
+  }
+  
+  .editbuttonspace {
+    margin-right: 2rem;
+    float: right;
+  }
+  
+  #user-form,
+  .header-wrap,
+  #create-form,
+  .create-user-wrap {
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 0;
+  }
+  
+  #update-err-msg,
+  #login-err-msg,
+  #create-err-msg {
+    color: yellow !important;
+  }
+  
+  #go-home {
+    width: auto;
+    height: 65px;
+  }
+  
+  .container {
+    padding-bottom: 2%;
+    margin-top: 10%;
+    background: rgba(86, 101, 115, 0.6);
+    height: 100%;
+    border-radius: 0.25rem;
+    margin-bottom: 2%;
+    width: 100vw;
+  }
+  
+  [data-useremail="true"] {
+    color: white !important;
+  }
+  [data-register="true"] {
+    color: white !important;
+  }
+  
+  .lead {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+  
+  .userId h2,
+  .header-wrap h1 {
+    text-transform: capitalize;
+  }
+  
+  hr {
+    background-color: #fff !important;
+  }
+  
+  .list-group-item {
+    line-height: 2.5;
+  }
+  
+  .card-body {
+    color: var(--main-bg-color);
+  }
+  
+  /* Test CSS for emojis */
+  .dropbtn {
+    background-color: #04aa6d;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+  
+  .msg-margin {
+    margin-top: 0.5rem;
+  }
+  
+  /* Media Queries */
+  
+  @media screen and (max-width: 574px) {
+    .font-utility {
+      font-size: 1.5rem;
+    }
+    .secondary-font-utility {
+      font-size: 1rem;
+    }
+    .pastjournalentrymarker {
+      text-decoration: none;
+      text-align: center;
+      padding-right: 0.75rem;
+      color: var(--main-bg-color);
+      margin-right: 0.75rem;
+      word-break: break-word;
+    }
+    .editbuttonspace {
+      margin-right: 2rem;
+      margin-bottom: 1rem;
+      float: left;
+    }
+  }
