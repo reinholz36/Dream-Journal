@@ -33,7 +33,7 @@ const API = {
     // url.toString().slice(0, 22)
 
     return $.ajax({
-      //change splice number to 22 for localhost dev or 41 for live site
+      //change slice number to 22 for localhost dev or 41 for live site
       url: url.toString().slice(0, 41) + "api/example/" + id,
       type: "PUT",
 
