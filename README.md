@@ -30,6 +30,7 @@ Lydia Riverwood, Wesley Bryant, Alan M Do, Jonny Martin
 - Bcrypt
 - Dotenv
 - Cookie-Parser
+- Cyclic
 
 ## User Story
 
@@ -45,9 +46,9 @@ Lydia Riverwood, Wesley Bryant, Alan M Do, Jonny Martin
 
 ## Link to live site
 
-https://frozen-atoll-87689.herokuapp.com/
+https://spotless-girdle-toad.cyclic.app/dashboard
 
-<a href="https://frozen-atoll-87689.herokuapp.com/">
+<a href="https://spotless-girdle-toad.cyclic.app/dashboard">
 <img src="./images/dreamjournal.jpg" alt="Dream Journal" page title">
 </a>
 
