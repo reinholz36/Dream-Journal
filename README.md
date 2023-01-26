@@ -4,7 +4,7 @@ This application assists a user in recording their dreams
 
 ## Collaborators:
 
-Dani Reinholz, Wesley Bryant, Alan M Do, Jonny Martin
+Lydia Riverwood, Wesley Bryant, Alan M Do, Jonny Martin
 
 ## Table of Contents
 
@@ -53,7 +53,7 @@ https://frozen-atoll-87689.herokuapp.com/
 
 ## Milestones
 
-1. Dani established CSS styling, routed emojis, captured and converted timestamps, added hamburger menu display, added favicon.
+1. Lydia established CSS styling, routed emojis, captured and converted timestamps, added hamburger menu display, added favicon.
 2. Wesley wrote the initial front end display for emoji selection and adding edit function to journal post.
 3. Alan added font and styling to laptop, tablet, and mobile display.
 4. Jonny added styling including the dream on button for journal entry submissions.
